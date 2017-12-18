@@ -1,19 +1,7 @@
-import React,{Component} from 'react';
-import {} from 'react-native';
-import App from './App';
+
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
-
-export default class DemoRedux extends Component{
-    render(){
-        return(
-            <Provider store={store}>
-                <App />
-            </Provider>
-        )
-    }
-}
 const defaulState={
     arrWords:[
         {id: 1, en: 'action', vn: 'hành động', memorized: true, isShow: true },
@@ -91,7 +79,7 @@ const reducer =(state=defaulState,action)=>{
 }
 // tao ra store
 const store=createStore(reducer);
-
+export default store;
 // tich hop vao trong ung dung react - Provider ( 1 component co chua props: store)
 
 

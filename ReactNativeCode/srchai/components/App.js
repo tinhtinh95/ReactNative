@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, FlatList, TouchableOpacity } from 'react-native
 import {connect} from 'react-redux';
 import Word from './Word';
 import Filter from './Filter';
-import Header from './header';
+import Header from './Header';
 import Form from './Form';
 
 
